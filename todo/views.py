@@ -1,12 +1,31 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Task
 from .forms import TaskForm
+from django.db.models import Q
 
 
 def task_list(request):
-    tasks = Task.objects.all()
-    return render(request, 'todo/task_list.html', {'tasks': tasks})
+    query = request.GET.get('q', '')
+    sort_by = request.GET.get('sort_by', 'created_at')
+    show_completed = request.GET.get('show_completed', 'true')
 
+    tasks = Task.objects.all()
+
+    if show_completed == 'false':
+        tasks = tasks.filter(completed=False)
+
+    if query:
+        tasks = tasks.filter(
+            Q(title__icontains=query) | Q(description__icontains=query)
+        )
+
+    tasks = tasks.order_by(sort_by)
+    return render(request, 'todo/task_list.html',{
+        'tasks': tasks,
+        'sort_by': sort_by,
+        'show_completed': show_completed,
+        'query': query
+    })
 
 def task_create(request):
     if request.method == 'POST':
@@ -37,3 +56,8 @@ def task_delete(request, pk):
         task.delete()
         return redirect('task_list')
     return render(request, 'todo/task_confirm_delete.html', {'task': task})
+
+
+def task_detail(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    return render(request, 'todo/task_detail.html', {'task': task})

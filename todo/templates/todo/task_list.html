@@ -8,10 +8,21 @@
 <body>
   <h1>Task List</h1>
   <a href="{% url 'task_create' %}">Create New Task</a>
+
+  <form method="get" action="">
+    <input type="text" name="q" value="{{ query }}" placeholder="Search tasks">
+    <button type="submit">Search</button>
+  </form>
+
+  <div>
+    <a href="?sort_by=created_at">Sort by Created Date</a> |
+    <a href="?sort_by=updated_at">Sort by Updated Date</a> |
+    <a href="?sort_by=completed">Sort by Completed</a>
+  </div>
   <ul>
     {% for task in tasks %}
     <li>
-      {{ task.title }} -
+      <a href="{% url 'task_detail' task.pk %}">{{ task.title }}</a> -
       <a href="{% url 'task_update' task.pk %}">Edit</a>
       <a href="{% url 'task_delete' task.pk %}">Delete</a>
     </li>
