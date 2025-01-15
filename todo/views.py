@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Task
+from .models import Task, Category
 from .forms import TaskForm
 from django.db.models import Q
+from django.core.paginator import Paginator
 
 
 def task_list(request):
@@ -19,13 +20,23 @@ def task_list(request):
             Q(title__icontains=query) | Q(description__icontains=query)
         )
 
-    tasks = tasks.order_by(sort_by)
-    return render(request, 'todo/task_list.html',{
+    if sort_by == 'category':
+        tasks = tasks.order_by('category__name', 'title')
+    else:
+        tasks = tasks.order_by(sort_by)
+
+    paginator = Paginator(tasks, 5)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'todo/task_list.html', {
         'tasks': tasks,
         'sort_by': sort_by,
         'show_completed': show_completed,
-        'query': query
+        'query': query,
+        'page_obj': page_obj,
     })
+
 
 def task_create(request):
     if request.method == 'POST':
