@@ -1,0 +1,16 @@
+<h1>Category List</h1>
+<a href="{% url 'category_create' %}" class="btn btn-primary">Add Category</a>
+<ul>
+  {% for category in categories %}
+  <li>
+    <strong>{{ category.name }}</strong>
+    <p>{{ category.description }}</p>
+    <a href="{% url 'category_update' category.pk %}" class="btn btn-warning">Edit</a>
+    <form action="{% url 'category_delete' category.pk %}" method="post" style="display: inline;">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+<a href="{% url 'task_list' %}">Back</a>

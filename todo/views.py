@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Task, Category
-from .forms import TaskForm
+from .forms import TaskForm, CategoryForm
+from django.contrib import messages
 from django.db.models import Q
 from django.core.paginator import Paginator
 
@@ -72,3 +73,44 @@ def task_delete(request, pk):
 def task_detail(request, pk):
     task = get_object_or_404(Task, pk=pk)
     return render(request, 'todo/task_detail.html', {'task': task})
+
+
+def category_list(request):
+    categories = Category.objects.all()
+    return render(request, 'todo/category_list.html', {'categories': categories})
+
+
+def category_create(request):
+    if request.method == 'POST':
+        form = CategoryForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Category created successfully!')
+            return redirect('category_list')
+    else:
+        form = CategoryForm()
+
+    return render(request, 'todo/category_form.html', {'form': form})
+
+
+def category_update(request, pk):
+    category = get_object_or_404(Category, pk=pk)
+    if request.method == 'POST':
+        form = CategoryForm(request.POST, instance=category)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Category updated successfully!')
+            return redirect('category_list')
+    else:
+        form = CategoryForm(instance=category)
+
+    return render(request, 'todo/category_form.html', {'form': form, 'category': category})
+
+
+def category_delete(request, pk):
+    category = get_object_or_404(Category, pk=pk)
+    if request.method == 'POST':
+        category.delete()
+        messages.success(request, 'Category deleted successfully!')
+        return redirect('category_list')
+    return render(request, 'todo/category_confirm_delete.html', {'category': category})
