@@ -18,13 +18,21 @@
     <a href="?sort_by=created_at">Sort by Created Date</a> |
     <a href="?sort_by=updated_at">Sort by Updated Date</a> |
     <a href="?sort_by=completed">Sort by Completed</a>
+    | <a href="?sort_by=priority">Sort by Priority</a>
     | <a href="?sort_by=category">Sort by Category</a>
+    | <a href="?sort_by=deadline">Sort by Deadline</a>
   </div>
   <ul>
     {% for task in tasks %}
     <li>
       <a href="{% url 'task_detail' task.pk %}">{{ task.title }}</a>
       <span>(Category: {{ task.category.name|default:"No Category" }})</span>
+      - <span>{% if task.deadline %}
+        {{task.deadline|date:"Y-m-d" }}
+        {% else %}
+        No Deadline
+        {% endif %}
+      </span>
       - <a href="{% url 'task_update' task.pk %}">Edit</a>
       | <a href="{% url 'task_delete' task.pk %}">Delete</a>
     </li>

@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Task, Category
-from .forms import TaskForm, CategoryForm
+from .models import Task, Category, Priority, Comment
+from .forms import TaskForm, CategoryForm, CommentForm
 from django.contrib import messages
 from django.db.models import Q
 from django.core.paginator import Paginator
@@ -18,11 +18,14 @@ def task_list(request):
 
     if query:
         tasks = tasks.filter(
-            Q(title__icontains=query) | Q(description__icontains=query)
+            Q(title__icontains=query)
+            | Q(description__icontains=query)
         )
 
     if sort_by == 'category':
         tasks = tasks.order_by('category__name', 'title')
+    elif sort_by == 'priority':
+        tasks = tasks.order_by('priority__level', 'title')
     else:
         tasks = tasks.order_by(sort_by)
 
@@ -72,7 +75,20 @@ def task_delete(request, pk):
 
 def task_detail(request, pk):
     task = get_object_or_404(Task, pk=pk)
-    return render(request, 'todo/task_detail.html', {'task': task})
+    comments = task.comments.all()
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.task = task
+            comment.user = request.user
+            comment.save()
+            return redirect('task_detail', pk=task.pk)
+    else:
+        form = CommentForm()
+
+    return render(request, 'todo/task_detail.html', {'task': task, 'comments': comments, 'form': form})
 
 
 def category_list(request):

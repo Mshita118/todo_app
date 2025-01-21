@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models import Task, Category
+from .models import Task, Category, Priority
 
 admin.site.register(Task)
+admin.site.register(Priority)
 
 
 @admin.register(Category)
