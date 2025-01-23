@@ -5,15 +5,14 @@ from .models import Task, Category, Comment
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
-        fields = ['title', 'description', 'completed', 'category', 'priority']
+        fields = ['title', 'description', 'completed',
+                  'category', 'priority', 'deadline']
         widgets = {
             'category': forms.Select(attrs={'class': 'form-control'}),
             'title': forms.TextInput(attrs={'class': 'form-control'}),
             'description': forms.Textarea(attrs={'class': 'form-control'}),
             'priority': forms.Select(attrs={'class': 'form-control'}),
-            'deadline': forms.NumberInput(attrs={
-                'class': 'form-control',
-                'type': 'date'}),
+            'deadline': forms.NumberInput(attrs={'class': 'form-control', 'type': 'date'}),
         }
 
 

@@ -32,7 +32,7 @@ class Task(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     priority = models.ForeignKey(
         Priority, on_delete=models.SET_NULL, null=True, blank=True)
-    deadline = models.DateField(null=True, blank=True)
+    deadline = models.DateField()
 
     def __str__(self):
         return self.title

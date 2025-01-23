@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task List</title>
+  <style>
+    .deadline-soon {
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <h1>Task List</h1>
@@ -24,7 +29,7 @@
   </div>
   <ul>
     {% for task in tasks %}
-    <li>
+    <li class="{% if task.is_deadline_soon %}deadline-soon{% endif %}">
       <a href="{% url 'task_detail' task.pk %}">{{ task.title }}</a>
       <span>(Category: {{ task.category.name|default:"No Category" }})</span>
       - <span>{% if task.deadline %}

@@ -4,6 +4,7 @@ from .forms import TaskForm, CategoryForm, CommentForm
 from django.contrib import messages
 from django.db.models import Q
 from django.core.paginator import Paginator
+from datetime import datetime, timedelta
 
 
 def task_list(request):
@@ -28,6 +29,11 @@ def task_list(request):
         tasks = tasks.order_by('priority__level', 'title')
     else:
         tasks = tasks.order_by(sort_by)
+
+    deadline_soon = datetime.now().date() + timedelta(days=7)
+
+    for task in tasks:
+        task.is_deadline_soon = task.deadline and task.deadline <= deadline_soon
 
     paginator = Paginator(tasks, 5)
     page_number = request.GET.get('page')
