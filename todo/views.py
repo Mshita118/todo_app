@@ -5,8 +5,10 @@ from django.contrib import messages
 from django.db.models import Q
 from django.core.paginator import Paginator
 from datetime import datetime, timedelta
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def task_list(request):
     query = request.GET.get('q', '')
     sort_by = request.GET.get('sort_by', 'created_at')
