@@ -1,11 +1,31 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Task, Category, Priority, Comment
-from .forms import TaskForm, CategoryForm, CommentForm
+from .forms import TaskForm, CategoryForm, CommentForm, SortForm
 from django.contrib import messages
 from django.db.models import Q
 from django.core.paginator import Paginator
 from datetime import datetime, timedelta
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import login, logout
+from django.contrib.auth.forms import UserCreationForm
+
+
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('task_list')
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/register.html', {'form': form})
+
+
+@login_required
+def custom_logout(request):
+    logout(request)
+    return redirect('logged_out')
 
 
 @login_required
@@ -41,12 +61,15 @@ def task_list(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
+    form = SortForm(initial={'sort_by': sort_by})
+
     return render(request, 'todo/task_list.html', {
         'tasks': tasks,
         'sort_by': sort_by,
         'show_completed': show_completed,
         'query': query,
         'page_obj': page_obj,
+        'form': form,
     })
 
 

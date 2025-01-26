@@ -12,6 +12,13 @@
 </head>
 <body>
   <h1>Task List</h1>
+  <div>
+    <form method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-primary">Logout</button>
+    </form>
+  </div>
+
   <a href="{% url 'task_create' %}">Create New Task</a>|<a href="{% url 'category_list' %}">Create New Category</a>
 
   <form method="get" action="">
@@ -19,14 +26,11 @@
     <button type="submit">Search</button>
   </form>
 
-  <div>
-    <a href="?sort_by=created_at">Sort by Created Date</a> |
-    <a href="?sort_by=updated_at">Sort by Updated Date</a> |
-    <a href="?sort_by=completed">Sort by Completed</a>
-    | <a href="?sort_by=priority">Sort by Priority</a>
-    | <a href="?sort_by=category">Sort by Category</a>
-    | <a href="?sort_by=deadline">Sort by Deadline</a>
-  </div>
+  <form method="get" action="">
+    <label for="sort_by">Sort by:</label>
+    {{ form.sort_by }}
+  </form>
+
   <ul>
     {% for task in tasks %}
     <li class="{% if task.is_deadline_soon %}deadline-soon{% endif %}">

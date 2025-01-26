@@ -33,3 +33,16 @@ class CommentForm(forms.ModelForm):
         widgets = {
             'title': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Add a comment...'}),
         }
+
+
+class SortForm(forms.Form):
+    SORT_CHOICES = [
+        ('created_at', 'Created Date'),
+        ('updated_at', 'Updated Date'),
+        ('completed', 'Completed'),
+        ('priority', 'Priority'),
+        ('category', 'Category'),
+        ('deadline', 'Deadline'),
+    ]
+    sort_by = forms.ChoiceField(choices=SORT_CHOICES, required=False, widget=forms.Select(
+        attrs={'onchange': 'this.form.submit();'}))
