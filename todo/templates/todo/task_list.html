@@ -4,6 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task List</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <link rel="manifest" href="{% static 'manifest.json' %}">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('{% static 'service - worker.js' %}')
+        .then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function (error) {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    }
+  </script>
+
   <style>
     .deadline-soon {
       color: red;
@@ -42,8 +57,6 @@
         No Deadline
         {% endif %}
       </span>
-      - <a href="{% url 'task_update' task.pk %}">Edit</a>
-      | <a href="{% url 'task_delete' task.pk %}">Delete</a>
     </li>
     {% endfor %}
   </ul>

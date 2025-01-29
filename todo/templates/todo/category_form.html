@@ -1,4 +1,7 @@
 <h1>{% if category %}Edit{% else %}Add{% endif %} Category</h1>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 <form method="post">
   {% csrf_token %}
   {{ form.as_p }}

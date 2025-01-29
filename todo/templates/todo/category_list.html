@@ -1,5 +1,8 @@
 <h1>Category List</h1>
 <a href="{% url 'category_create' %}" class="btn btn-primary">Add Category</a>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 <ul>
   {% for category in categories %}
   <li>

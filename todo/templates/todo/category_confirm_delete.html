@@ -1,4 +1,7 @@
 <h1>Confirm Delete</h1>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 <p>Are you sure you want to delete the category "{{ category.name }}"?</p>
 <form method="post">
   {% csrf_token %}
