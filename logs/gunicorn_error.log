@@ -1,0 +1,355 @@
+[2025-01-30 00:43:53 +0900] [28070] [INFO] Starting gunicorn 23.0.0
+[2025-01-30 00:43:53 +0900] [28070] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (28070)
+[2025-01-30 00:43:53 +0900] [28070] [INFO] Using worker: sync
+[2025-01-30 00:43:53 +0900] [28071] [INFO] Booting worker with pid: 28071
+[2025-01-30 00:43:54 +0900] [28072] [INFO] Booting worker with pid: 28072
+[2025-01-30 00:43:54 +0900] [28073] [INFO] Booting worker with pid: 28073
+[2025-01-29 15:59:23 +0000] [28072] [INFO] Worker exiting (pid: 28072)
+[2025-01-29 15:59:23 +0000] [28071] [INFO] Worker exiting (pid: 28071)
+[2025-01-29 15:59:23 +0000] [28073] [INFO] Worker exiting (pid: 28073)
+[2025-01-30 00:59:23 +0900] [28070] [INFO] Handling signal: term
+[2025-01-30 00:59:24 +0900] [28070] [INFO] Shutting down: Master
+[2025-01-30 00:59:24 +0900] [30765] [INFO] Starting gunicorn 23.0.0
+[2025-01-30 00:59:24 +0900] [30765] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (30765)
+[2025-01-30 00:59:24 +0900] [30765] [INFO] Using worker: sync
+[2025-01-30 00:59:24 +0900] [30766] [INFO] Booting worker with pid: 30766
+[2025-01-30 00:59:24 +0900] [30767] [INFO] Booting worker with pid: 30767
+[2025-01-30 00:59:24 +0900] [30768] [INFO] Booting worker with pid: 30768
+[2025-01-31 22:00:06 +0900] [164] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 22:00:06 +0900] [164] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (164)
+[2025-01-31 22:00:06 +0900] [164] [INFO] Using worker: sync
+[2025-01-31 22:00:06 +0900] [286] [INFO] Booting worker with pid: 286
+[2025-01-31 22:00:05 +0900] [294] [INFO] Booting worker with pid: 294
+[2025-01-31 22:00:05 +0900] [296] [INFO] Booting worker with pid: 296
+[2025-01-31 22:17:12 +0900] [164] [INFO] Handling signal: term
+[2025-01-31 13:17:12 +0000] [296] [INFO] Worker exiting (pid: 296)
+[2025-01-31 13:17:12 +0000] [294] [INFO] Worker exiting (pid: 294)
+[2025-01-31 13:17:12 +0000] [286] [INFO] Worker exiting (pid: 286)
+[2025-01-31 22:17:12 +0900] [164] [INFO] Shutting down: Master
+[2025-01-31 22:17:12 +0900] [4474] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 22:17:12 +0900] [4474] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (4474)
+[2025-01-31 22:17:12 +0900] [4474] [INFO] Using worker: sync
+[2025-01-31 22:17:12 +0900] [4475] [INFO] Booting worker with pid: 4475
+[2025-01-31 22:17:12 +0900] [4476] [INFO] Booting worker with pid: 4476
+[2025-01-31 22:17:12 +0900] [4477] [INFO] Booting worker with pid: 4477
+[2025-01-31 13:17:20 +0000] [4477] [INFO] Worker exiting (pid: 4477)
+[2025-01-31 13:17:20 +0000] [4475] [INFO] Worker exiting (pid: 4475)
+[2025-01-31 22:17:20 +0900] [4474] [INFO] Handling signal: term
+[2025-01-31 22:17:20 +0900] [4474] [ERROR] Worker (pid:4475) was sent SIGTERM!
+[2025-01-31 13:17:20 +0000] [4476] [INFO] Worker exiting (pid: 4476)
+[2025-01-31 22:17:20 +0900] [4474] [INFO] Shutting down: Master
+[2025-01-31 22:18:58 +0900] [175] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 22:18:58 +0900] [175] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (175)
+[2025-01-31 22:18:58 +0900] [175] [INFO] Using worker: sync
+[2025-01-31 22:18:58 +0900] [283] [INFO] Booting worker with pid: 283
+[2025-01-31 22:18:58 +0900] [285] [INFO] Booting worker with pid: 285
+[2025-01-31 22:18:57 +0900] [293] [INFO] Booting worker with pid: 293
+[2025-01-31 22:49:33 +0900] [175] [INFO] Handling signal: term
+[2025-01-31 13:49:33 +0000] [285] [INFO] Worker exiting (pid: 285)
+[2025-01-31 13:49:33 +0000] [293] [INFO] Worker exiting (pid: 293)
+[2025-01-31 13:49:33 +0000] [283] [INFO] Worker exiting (pid: 283)
+[2025-01-31 22:49:33 +0900] [175] [INFO] Shutting down: Master
+[2025-01-31 22:52:34 +0900] [4916] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 22:52:34 +0900] [4916] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (4916)
+[2025-01-31 22:52:34 +0900] [4916] [INFO] Using worker: sync
+[2025-01-31 22:52:34 +0900] [4917] [INFO] Booting worker with pid: 4917
+[2025-01-31 22:52:34 +0900] [4918] [INFO] Booting worker with pid: 4918
+[2025-01-31 22:52:34 +0900] [4919] [INFO] Booting worker with pid: 4919
+[2025-01-31 22:54:56 +0900] [5064] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 22:54:56 +0900] [5064] [INFO] Listening at: http://0.0.0.0:8000 (5064)
+[2025-01-31 22:54:56 +0900] [5064] [INFO] Using worker: sync
+[2025-01-31 22:54:56 +0900] [5065] [INFO] Booting worker with pid: 5065
+[2025-01-31 22:54:56 +0900] [5066] [INFO] Booting worker with pid: 5066
+[2025-01-31 22:54:56 +0900] [5067] [INFO] Booting worker with pid: 5067
+[2025-01-31 22:54:57 +0900] [5068] [INFO] Booting worker with pid: 5068
+[2025-01-31 22:54:57 +0900] [5069] [INFO] Booting worker with pid: 5069
+[2025-01-31 22:54:57 +0900] [5070] [INFO] Booting worker with pid: 5070
+[2025-01-31 22:54:57 +0900] [5071] [INFO] Booting worker with pid: 5071
+[2025-01-31 22:54:57 +0900] [5072] [INFO] Booting worker with pid: 5072
+[2025-01-31 22:54:57 +0900] [5073] [INFO] Booting worker with pid: 5073
+[2025-01-31 22:54:57 +0900] [5074] [INFO] Booting worker with pid: 5074
+[2025-01-31 22:54:57 +0900] [5075] [INFO] Booting worker with pid: 5075
+[2025-01-31 22:54:57 +0900] [5076] [INFO] Booting worker with pid: 5076
+[2025-01-31 22:54:57 +0900] [5077] [INFO] Booting worker with pid: 5077
+[2025-01-31 22:54:57 +0900] [5078] [INFO] Booting worker with pid: 5078
+[2025-01-31 22:54:57 +0900] [5079] [INFO] Booting worker with pid: 5079
+[2025-01-31 22:54:57 +0900] [5080] [INFO] Booting worker with pid: 5080
+[2025-01-31 22:54:57 +0900] [5081] [INFO] Booting worker with pid: 5081
+[2025-01-31 22:55:56 +0900] [5064] [INFO] Handling signal: int
+[2025-01-31 13:55:56 +0000] [5067] [INFO] Worker exiting (pid: 5067)
+[2025-01-31 13:55:56 +0000] [5071] [INFO] Worker exiting (pid: 5071)
+[2025-01-31 13:55:56 +0000] [5075] [INFO] Worker exiting (pid: 5075)
+[2025-01-31 13:55:56 +0000] [5065] [INFO] Worker exiting (pid: 5065)
+[2025-01-31 13:55:56 +0000] [5076] [INFO] Worker exiting (pid: 5076)
+[2025-01-31 13:55:56 +0000] [5073] [INFO] Worker exiting (pid: 5073)
+[2025-01-31 13:55:56 +0000] [5068] [INFO] Worker exiting (pid: 5068)
+[2025-01-31 13:55:56 +0000] [5072] [INFO] Worker exiting (pid: 5072)
+[2025-01-31 13:55:56 +0000] [5070] [INFO] Worker exiting (pid: 5070)
+[2025-01-31 13:55:56 +0000] [5069] [INFO] Worker exiting (pid: 5069)
+[2025-01-31 13:55:56 +0000] [5066] [INFO] Worker exiting (pid: 5066)
+[2025-01-31 13:55:56 +0000] [5079] [INFO] Worker exiting (pid: 5079)
+[2025-01-31 13:55:56 +0000] [5078] [INFO] Worker exiting (pid: 5078)
+[2025-01-31 13:55:56 +0000] [5080] [INFO] Worker exiting (pid: 5080)
+[2025-01-31 13:55:56 +0000] [5077] [INFO] Worker exiting (pid: 5077)
+[2025-01-31 13:55:56 +0000] [5074] [INFO] Worker exiting (pid: 5074)
+[2025-01-31 13:55:56 +0000] [5081] [INFO] Worker exiting (pid: 5081)
+[2025-01-31 22:55:57 +0900] [5064] [INFO] Shutting down: Master
+[2025-01-31 23:00:10 +0900] [5383] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:00:10 +0900] [5383] [INFO] Listening at: http://0.0.0.0:8000 (5383)
+[2025-01-31 23:00:10 +0900] [5383] [INFO] Using worker: sync
+[2025-01-31 23:00:10 +0900] [5384] [INFO] Booting worker with pid: 5384
+[2025-01-31 23:00:10 +0900] [5385] [INFO] Booting worker with pid: 5385
+[2025-01-31 23:00:10 +0900] [5386] [INFO] Booting worker with pid: 5386
+[2025-01-31 23:00:10 +0900] [5387] [INFO] Booting worker with pid: 5387
+[2025-01-31 23:00:10 +0900] [5388] [INFO] Booting worker with pid: 5388
+[2025-01-31 23:00:10 +0900] [5389] [INFO] Booting worker with pid: 5389
+[2025-01-31 23:00:10 +0900] [5390] [INFO] Booting worker with pid: 5390
+[2025-01-31 23:00:10 +0900] [5391] [INFO] Booting worker with pid: 5391
+[2025-01-31 23:00:10 +0900] [5392] [INFO] Booting worker with pid: 5392
+[2025-01-31 23:00:10 +0900] [5393] [INFO] Booting worker with pid: 5393
+[2025-01-31 23:00:10 +0900] [5394] [INFO] Booting worker with pid: 5394
+[2025-01-31 23:00:10 +0900] [5395] [INFO] Booting worker with pid: 5395
+[2025-01-31 23:00:10 +0900] [5396] [INFO] Booting worker with pid: 5396
+[2025-01-31 23:00:10 +0900] [5397] [INFO] Booting worker with pid: 5397
+[2025-01-31 23:00:10 +0900] [5398] [INFO] Booting worker with pid: 5398
+[2025-01-31 23:00:10 +0900] [5399] [INFO] Booting worker with pid: 5399
+[2025-01-31 23:00:10 +0900] [5400] [INFO] Booting worker with pid: 5400
+[2025-01-31 23:01:14 +0900] [5383] [INFO] Handling signal: int
+[2025-01-31 14:01:14 +0000] [5384] [INFO] Worker exiting (pid: 5384)
+[2025-01-31 14:01:14 +0000] [5390] [INFO] Worker exiting (pid: 5390)
+[2025-01-31 14:01:14 +0000] [5392] [INFO] Worker exiting (pid: 5392)
+[2025-01-31 14:01:14 +0000] [5400] [INFO] Worker exiting (pid: 5400)
+[2025-01-31 14:01:14 +0000] [5397] [INFO] Worker exiting (pid: 5397)
+[2025-01-31 14:01:14 +0000] [5399] [INFO] Worker exiting (pid: 5399)
+[2025-01-31 14:01:14 +0000] [5386] [INFO] Worker exiting (pid: 5386)
+[2025-01-31 14:01:14 +0000] [5394] [INFO] Worker exiting (pid: 5394)
+[2025-01-31 14:01:14 +0000] [5385] [INFO] Worker exiting (pid: 5385)
+[2025-01-31 14:01:14 +0000] [5387] [INFO] Worker exiting (pid: 5387)
+[2025-01-31 14:01:14 +0000] [5398] [INFO] Worker exiting (pid: 5398)
+[2025-01-31 14:01:14 +0000] [5389] [INFO] Worker exiting (pid: 5389)
+[2025-01-31 14:01:14 +0000] [5395] [INFO] Worker exiting (pid: 5395)
+[2025-01-31 14:01:14 +0000] [5393] [INFO] Worker exiting (pid: 5393)
+[2025-01-31 14:01:14 +0000] [5396] [INFO] Worker exiting (pid: 5396)
+[2025-01-31 14:01:14 +0000] [5388] [INFO] Worker exiting (pid: 5388)
+[2025-01-31 14:01:14 +0000] [5391] [INFO] Worker exiting (pid: 5391)
+[2025-01-31 23:01:15 +0900] [5383] [INFO] Shutting down: Master
+[2025-01-31 23:02:17 +0900] [5519] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:02:17 +0900] [5519] [INFO] Listening at: http://0.0.0.0:8000 (5519)
+[2025-01-31 23:02:17 +0900] [5519] [INFO] Using worker: sync
+[2025-01-31 23:02:17 +0900] [5520] [INFO] Booting worker with pid: 5520
+[2025-01-31 23:02:17 +0900] [5521] [INFO] Booting worker with pid: 5521
+[2025-01-31 23:02:17 +0900] [5522] [INFO] Booting worker with pid: 5522
+[2025-01-31 23:02:17 +0900] [5523] [INFO] Booting worker with pid: 5523
+[2025-01-31 23:02:17 +0900] [5524] [INFO] Booting worker with pid: 5524
+[2025-01-31 23:02:17 +0900] [5525] [INFO] Booting worker with pid: 5525
+[2025-01-31 23:02:17 +0900] [5526] [INFO] Booting worker with pid: 5526
+[2025-01-31 23:02:17 +0900] [5527] [INFO] Booting worker with pid: 5527
+[2025-01-31 23:02:17 +0900] [5528] [INFO] Booting worker with pid: 5528
+[2025-01-31 23:02:17 +0900] [5529] [INFO] Booting worker with pid: 5529
+[2025-01-31 23:02:18 +0900] [5530] [INFO] Booting worker with pid: 5530
+[2025-01-31 23:02:18 +0900] [5531] [INFO] Booting worker with pid: 5531
+[2025-01-31 23:02:18 +0900] [5532] [INFO] Booting worker with pid: 5532
+[2025-01-31 23:02:18 +0900] [5533] [INFO] Booting worker with pid: 5533
+[2025-01-31 23:02:18 +0900] [5534] [INFO] Booting worker with pid: 5534
+[2025-01-31 23:02:18 +0900] [5535] [INFO] Booting worker with pid: 5535
+[2025-01-31 23:02:18 +0900] [5536] [INFO] Booting worker with pid: 5536
+[2025-01-31 23:02:22 +0900] [5519] [INFO] Handling signal: int
+[2025-01-31 14:02:22 +0000] [5521] [INFO] Worker exiting (pid: 5521)
+[2025-01-31 14:02:22 +0000] [5528] [INFO] Worker exiting (pid: 5528)
+[2025-01-31 14:02:22 +0000] [5523] [INFO] Worker exiting (pid: 5523)
+[2025-01-31 14:02:22 +0000] [5535] [INFO] Worker exiting (pid: 5535)
+[2025-01-31 14:02:22 +0000] [5526] [INFO] Worker exiting (pid: 5526)
+[2025-01-31 14:02:22 +0000] [5527] [INFO] Worker exiting (pid: 5527)
+[2025-01-31 14:02:22 +0000] [5524] [INFO] Worker exiting (pid: 5524)
+[2025-01-31 14:02:22 +0000] [5536] [INFO] Worker exiting (pid: 5536)
+[2025-01-31 14:02:22 +0000] [5520] [INFO] Worker exiting (pid: 5520)
+[2025-01-31 14:02:22 +0000] [5533] [INFO] Worker exiting (pid: 5533)
+[2025-01-31 14:02:22 +0000] [5530] [INFO] Worker exiting (pid: 5530)
+[2025-01-31 14:02:22 +0000] [5532] [INFO] Worker exiting (pid: 5532)
+[2025-01-31 14:02:22 +0000] [5531] [INFO] Worker exiting (pid: 5531)
+[2025-01-31 14:02:22 +0000] [5522] [INFO] Worker exiting (pid: 5522)
+[2025-01-31 14:02:22 +0000] [5525] [INFO] Worker exiting (pid: 5525)
+[2025-01-31 14:02:22 +0000] [5534] [INFO] Worker exiting (pid: 5534)
+[2025-01-31 14:02:22 +0000] [5529] [INFO] Worker exiting (pid: 5529)
+[2025-01-31 23:02:22 +0900] [5519] [INFO] Shutting down: Master
+[2025-01-31 14:05:59 +0000] [4919] [INFO] Worker exiting (pid: 4919)
+[2025-01-31 14:05:59 +0000] [4917] [INFO] Worker exiting (pid: 4917)
+[2025-01-31 23:05:59 +0900] [4916] [INFO] Handling signal: term
+[2025-01-31 14:05:59 +0000] [4918] [INFO] Worker exiting (pid: 4918)
+[2025-01-31 23:05:59 +0900] [4916] [INFO] Shutting down: Master
+[2025-01-31 23:05:59 +0900] [6401] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:05:59 +0900] [6401] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (6401)
+[2025-01-31 23:05:59 +0900] [6401] [INFO] Using worker: sync
+[2025-01-31 23:05:59 +0900] [6402] [INFO] Booting worker with pid: 6402
+[2025-01-31 23:05:59 +0900] [6403] [INFO] Booting worker with pid: 6403
+[2025-01-31 23:05:59 +0900] [6404] [INFO] Booting worker with pid: 6404
+[2025-01-31 23:07:42 +0900] [6401] [INFO] Handling signal: term
+[2025-01-31 14:07:42 +0000] [6402] [INFO] Worker exiting (pid: 6402)
+[2025-01-31 14:07:42 +0000] [6403] [INFO] Worker exiting (pid: 6403)
+[2025-01-31 14:07:42 +0000] [6404] [INFO] Worker exiting (pid: 6404)
+[2025-01-31 23:07:42 +0900] [6401] [INFO] Shutting down: Master
+[2025-01-31 23:07:42 +0900] [6736] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:07:42 +0900] [6736] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (6736)
+[2025-01-31 23:07:42 +0900] [6736] [INFO] Using worker: sync
+[2025-01-31 23:07:42 +0900] [6737] [INFO] Booting worker with pid: 6737
+[2025-01-31 23:07:42 +0900] [6741] [INFO] Booting worker with pid: 6741
+[2025-01-31 23:07:42 +0900] [6742] [INFO] Booting worker with pid: 6742
+[2025-01-31 14:10:32 +0000] [6737] [INFO] Worker exiting (pid: 6737)
+[2025-01-31 23:10:32 +0900] [6736] [INFO] Handling signal: term
+[2025-01-31 14:10:32 +0000] [6742] [INFO] Worker exiting (pid: 6742)
+[2025-01-31 14:10:32 +0000] [6741] [INFO] Worker exiting (pid: 6741)
+[2025-01-31 23:10:32 +0900] [6736] [INFO] Shutting down: Master
+[2025-01-31 23:10:32 +0900] [7290] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:10:32 +0900] [7290] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (7290)
+[2025-01-31 23:10:32 +0900] [7290] [INFO] Using worker: sync
+[2025-01-31 23:10:32 +0900] [7294] [INFO] Booting worker with pid: 7294
+[2025-01-31 23:10:32 +0900] [7298] [INFO] Booting worker with pid: 7298
+[2025-01-31 23:10:32 +0900] [7299] [INFO] Booting worker with pid: 7299
+[2025-01-31 23:12:22 +0900] [7643] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:12:22 +0900] [7643] [INFO] Listening at: http://0.0.0.0:8000 (7643)
+[2025-01-31 23:12:22 +0900] [7643] [INFO] Using worker: sync
+[2025-01-31 23:12:22 +0900] [7644] [INFO] Booting worker with pid: 7644
+[2025-01-31 23:12:22 +0900] [7645] [INFO] Booting worker with pid: 7645
+[2025-01-31 23:12:23 +0900] [7646] [INFO] Booting worker with pid: 7646
+[2025-01-31 23:12:48 +0900] [7643] [INFO] Handling signal: int
+[2025-01-31 14:12:48 +0000] [7645] [INFO] Worker exiting (pid: 7645)
+[2025-01-31 14:12:48 +0000] [7644] [INFO] Worker exiting (pid: 7644)
+[2025-01-31 14:12:48 +0000] [7646] [INFO] Worker exiting (pid: 7646)
+[2025-01-31 23:12:48 +0900] [7643] [INFO] Shutting down: Master
+[2025-01-31 14:13:46 +0000] [7298] [INFO] Worker exiting (pid: 7298)
+[2025-01-31 14:13:46 +0000] [7294] [INFO] Worker exiting (pid: 7294)
+[2025-01-31 14:13:46 +0000] [7299] [INFO] Worker exiting (pid: 7299)
+[2025-01-31 23:13:46 +0900] [7290] [INFO] Handling signal: term
+[2025-01-31 23:13:46 +0900] [7290] [INFO] Shutting down: Master
+[2025-01-31 23:13:46 +0900] [7856] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:13:46 +0900] [7856] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (7856)
+[2025-01-31 23:13:46 +0900] [7856] [INFO] Using worker: sync
+[2025-01-31 23:13:46 +0900] [7857] [INFO] Booting worker with pid: 7857
+[2025-01-31 23:13:46 +0900] [7858] [INFO] Booting worker with pid: 7858
+[2025-01-31 23:13:46 +0900] [7859] [INFO] Booting worker with pid: 7859
+[2025-01-31 14:19:18 +0000] [7859] [INFO] Worker exiting (pid: 7859)
+[2025-01-31 14:19:18 +0000] [7858] [INFO] Worker exiting (pid: 7858)
+[2025-01-31 23:19:18 +0900] [7856] [INFO] Handling signal: term
+[2025-01-31 14:19:18 +0000] [7857] [INFO] Worker exiting (pid: 7857)
+[2025-01-31 23:19:18 +0900] [7856] [INFO] Shutting down: Master
+[2025-01-31 23:19:18 +0900] [8847] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:19:18 +0900] [8847] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (8847)
+[2025-01-31 23:19:18 +0900] [8847] [INFO] Using worker: sync
+[2025-01-31 23:19:18 +0900] [8848] [INFO] Booting worker with pid: 8848
+[2025-01-31 23:19:18 +0900] [8849] [INFO] Booting worker with pid: 8849
+[2025-01-31 23:19:18 +0900] [8850] [INFO] Booting worker with pid: 8850
+[2025-01-31 23:19:20 +0900] [8847] [INFO] Handling signal: term
+[2025-01-31 14:19:20 +0000] [8848] [INFO] Worker exiting (pid: 8848)
+[2025-01-31 14:19:20 +0000] [8850] [INFO] Worker exiting (pid: 8850)
+[2025-01-31 14:19:20 +0000] [8849] [INFO] Worker exiting (pid: 8849)
+[2025-01-31 23:19:20 +0900] [8847] [INFO] Shutting down: Master
+[2025-01-31 23:19:20 +0900] [8855] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:19:20 +0900] [8855] [INFO] Listening at: unix:/home/mshita/todo_project/gunicorn.sock (8855)
+[2025-01-31 23:19:20 +0900] [8855] [INFO] Using worker: sync
+[2025-01-31 23:19:20 +0900] [8856] [INFO] Booting worker with pid: 8856
+[2025-01-31 23:19:20 +0900] [8857] [INFO] Booting worker with pid: 8857
+[2025-01-31 23:19:20 +0900] [8858] [INFO] Booting worker with pid: 8858
+[2025-01-31 23:30:24 +0900] [10337] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:30:24 +0900] [10337] [INFO] Listening at: http://0.0.0.0:8000 (10337)
+[2025-01-31 23:30:24 +0900] [10337] [INFO] Using worker: sync
+[2025-01-31 23:30:24 +0900] [10338] [INFO] Booting worker with pid: 10338
+[2025-01-31 23:30:24 +0900] [10339] [INFO] Booting worker with pid: 10339
+[2025-01-31 23:30:24 +0900] [10340] [INFO] Booting worker with pid: 10340
+[2025-01-31 23:30:41 +0900] [10337] [INFO] Handling signal: int
+[2025-01-31 14:30:41 +0000] [10340] [INFO] Worker exiting (pid: 10340)
+[2025-01-31 14:30:41 +0000] [10339] [INFO] Worker exiting (pid: 10339)
+[2025-01-31 14:30:41 +0000] [10338] [INFO] Worker exiting (pid: 10338)
+[2025-01-31 23:30:41 +0900] [10337] [INFO] Shutting down: Master
+[2025-01-31 23:32:17 +0900] [10511] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:32:17 +0900] [10511] [INFO] Listening at: http://0.0.0.0:8000 (10511)
+[2025-01-31 23:32:17 +0900] [10511] [INFO] Using worker: sync
+[2025-01-31 23:32:17 +0900] [10518] [INFO] Booting worker with pid: 10518
+[2025-01-31 23:32:17 +0900] [10519] [INFO] Booting worker with pid: 10519
+[2025-01-31 23:32:17 +0900] [10520] [INFO] Booting worker with pid: 10520
+[2025-01-31 23:32:20 +0900] [10511] [INFO] Handling signal: int
+[2025-01-31 14:32:20 +0000] [10519] [INFO] Worker exiting (pid: 10519)
+[2025-01-31 14:32:20 +0000] [10520] [INFO] Worker exiting (pid: 10520)
+[2025-01-31 14:32:20 +0000] [10518] [INFO] Worker exiting (pid: 10518)
+[2025-01-31 23:32:20 +0900] [10511] [INFO] Shutting down: Master
+[2025-01-31 23:33:39 +0900] [10564] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:33:39 +0900] [10564] [INFO] Listening at: http://0.0.0.0:8000 (10564)
+[2025-01-31 23:33:39 +0900] [10564] [INFO] Using worker: sync
+[2025-01-31 23:33:39 +0900] [10566] [INFO] Booting worker with pid: 10566
+[2025-01-31 23:33:39 +0900] [10569] [INFO] Booting worker with pid: 10569
+[2025-01-31 23:33:39 +0900] [10573] [INFO] Booting worker with pid: 10573
+[2025-01-31 23:36:29 +0900] [10564] [INFO] Handling signal: int
+[2025-01-31 14:36:29 +0000] [10566] [INFO] Worker exiting (pid: 10566)
+[2025-01-31 14:36:29 +0000] [10569] [INFO] Worker exiting (pid: 10569)
+[2025-01-31 14:36:29 +0000] [10573] [INFO] Worker exiting (pid: 10573)
+[2025-01-31 23:36:29 +0900] [10564] [INFO] Shutting down: Master
+[2025-01-31 23:37:09 +0900] [11062] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:37:09 +0900] [11062] [INFO] Listening at: http://127.0.0.1:8000 (11062)
+[2025-01-31 23:37:09 +0900] [11062] [INFO] Using worker: sync
+[2025-01-31 23:37:09 +0900] [11063] [INFO] Booting worker with pid: 11063
+[2025-01-31 23:37:09 +0900] [11064] [INFO] Booting worker with pid: 11064
+[2025-01-31 23:37:09 +0900] [11065] [INFO] Booting worker with pid: 11065
+[2025-01-31 23:38:16 +0900] [11062] [INFO] Handling signal: int
+[2025-01-31 14:38:16 +0000] [11065] [INFO] Worker exiting (pid: 11065)
+[2025-01-31 14:38:16 +0000] [11064] [INFO] Worker exiting (pid: 11064)
+[2025-01-31 14:38:16 +0000] [11063] [INFO] Worker exiting (pid: 11063)
+[2025-01-31 23:38:16 +0900] [11062] [INFO] Shutting down: Master
+[2025-01-31 23:40:57 +0900] [11421] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:40:57 +0900] [11421] [INFO] Listening at: http://0.0.0.0:8000 (11421)
+[2025-01-31 23:40:57 +0900] [11421] [INFO] Using worker: sync
+[2025-01-31 23:40:57 +0900] [11422] [INFO] Booting worker with pid: 11422
+[2025-01-31 23:40:57 +0900] [11423] [INFO] Booting worker with pid: 11423
+[2025-01-31 23:40:57 +0900] [11424] [INFO] Booting worker with pid: 11424
+[2025-01-31 23:42:01 +0900] [11421] [INFO] Handling signal: int
+[2025-01-31 14:42:01 +0000] [11422] [INFO] Worker exiting (pid: 11422)
+[2025-01-31 14:42:01 +0000] [11423] [INFO] Worker exiting (pid: 11423)
+[2025-01-31 14:42:01 +0000] [11424] [INFO] Worker exiting (pid: 11424)
+[2025-01-31 23:42:01 +0900] [11421] [INFO] Shutting down: Master
+[2025-01-31 23:42:07 +0900] [11515] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:42:07 +0900] [11515] [INFO] Listening at: http://0.0.0.0:8000 (11515)
+[2025-01-31 23:42:07 +0900] [11515] [INFO] Using worker: sync
+[2025-01-31 23:42:07 +0900] [11516] [INFO] Booting worker with pid: 11516
+[2025-01-31 23:42:07 +0900] [11517] [INFO] Booting worker with pid: 11517
+[2025-01-31 23:42:07 +0900] [11518] [INFO] Booting worker with pid: 11518
+[2025-01-31 23:42:18 +0900] [11515] [INFO] Handling signal: int
+[2025-01-31 14:42:18 +0000] [11516] [INFO] Worker exiting (pid: 11516)
+[2025-01-31 14:42:18 +0000] [11517] [INFO] Worker exiting (pid: 11517)
+[2025-01-31 14:42:18 +0000] [11518] [INFO] Worker exiting (pid: 11518)
+[2025-01-31 23:42:18 +0900] [11515] [INFO] Shutting down: Master
+[2025-01-31 23:44:56 +0900] [12002] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:44:56 +0900] [12002] [INFO] Listening at: http://0.0.0.0:8000 (12002)
+[2025-01-31 23:44:56 +0900] [12002] [INFO] Using worker: sync
+[2025-01-31 23:44:56 +0900] [12003] [INFO] Booting worker with pid: 12003
+[2025-01-31 23:44:56 +0900] [12004] [INFO] Booting worker with pid: 12004
+[2025-01-31 23:44:57 +0900] [12005] [INFO] Booting worker with pid: 12005
+[2025-01-31 23:45:38 +0900] [12002] [INFO] Handling signal: int
+[2025-01-31 14:45:38 +0000] [12004] [INFO] Worker exiting (pid: 12004)
+[2025-01-31 14:45:38 +0000] [12005] [INFO] Worker exiting (pid: 12005)
+[2025-01-31 14:45:38 +0000] [12003] [INFO] Worker exiting (pid: 12003)
+[2025-01-31 23:45:39 +0900] [12002] [INFO] Shutting down: Master
+[2025-01-31 23:50:35 +0900] [12773] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:50:35 +0900] [12773] [INFO] Listening at: http://0.0.0.0:8000 (12773)
+[2025-01-31 23:50:35 +0900] [12773] [INFO] Using worker: sync
+[2025-01-31 23:50:35 +0900] [12774] [INFO] Booting worker with pid: 12774
+[2025-01-31 23:50:35 +0900] [12775] [INFO] Booting worker with pid: 12775
+[2025-01-31 23:50:35 +0900] [12776] [INFO] Booting worker with pid: 12776
+[2025-01-31 23:51:09 +0900] [12773] [INFO] Handling signal: int
+[2025-01-31 14:51:09 +0000] [12776] [INFO] Worker exiting (pid: 12776)
+[2025-01-31 14:51:09 +0000] [12774] [INFO] Worker exiting (pid: 12774)
+[2025-01-31 14:51:09 +0000] [12775] [INFO] Worker exiting (pid: 12775)
+[2025-01-31 23:51:10 +0900] [12773] [INFO] Shutting down: Master
+[2025-01-31 23:52:03 +0900] [12833] [INFO] Starting gunicorn 23.0.0
+[2025-01-31 23:52:03 +0900] [12833] [INFO] Listening at: http://0.0.0.0:8000 (12833)
+[2025-01-31 23:52:03 +0900] [12833] [INFO] Using worker: sync
+[2025-01-31 23:52:03 +0900] [12834] [INFO] Booting worker with pid: 12834
+[2025-01-31 23:52:03 +0900] [12835] [INFO] Booting worker with pid: 12835
+[2025-01-31 23:52:03 +0900] [12836] [INFO] Booting worker with pid: 12836
+[2025-01-31 23:52:20 +0900] [12833] [INFO] Handling signal: int
+[2025-01-31 14:52:20 +0000] [12835] [INFO] Worker exiting (pid: 12835)
+[2025-01-31 14:52:20 +0000] [12836] [INFO] Worker exiting (pid: 12836)
+[2025-01-31 14:52:20 +0000] [12834] [INFO] Worker exiting (pid: 12834)
+[2025-01-31 23:52:20 +0900] [12833] [INFO] Shutting down: Master
+[2025-02-01 00:04:13 +0900] [8855] [INFO] Handling signal: term
+[2025-01-31 15:04:13 +0000] [8856] [INFO] Worker exiting (pid: 8856)
+[2025-01-31 15:04:13 +0000] [8857] [INFO] Worker exiting (pid: 8857)
+[2025-01-31 15:04:13 +0000] [8858] [INFO] Worker exiting (pid: 8858)
+[2025-02-01 00:04:13 +0900] [8855] [INFO] Shutting down: Master

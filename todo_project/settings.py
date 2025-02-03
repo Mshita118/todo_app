@@ -32,7 +32,10 @@ SECRET_KEY = 'django-insecure-7h+po(vjc$i$pzj(gb2!m473l@f#^x*b1h81)^k3n2yt@pyhn5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+# settings.py
+ALLOWED_HOSTS = [
+    'ec2-3-27-171-88.ap-southeast-2.compute.amazonaws.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -135,3 +138,22 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = '/'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': '/home/mshita/todo_project/logs/django.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
